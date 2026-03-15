@@ -3,7 +3,7 @@ import { Smartphone, Apple } from "lucide-react";
 
 export default function CtaSection() {
   return (
-    <section className="relative overflow-hidden bg-primary py-20 sm:py-28">
+    <section id="cta" className="relative overflow-hidden bg-primary py-20 sm:py-28">
       <div className="absolute inset-0">
         <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
         <div className="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
@@ -21,11 +21,11 @@ export default function CtaSection() {
             </p>
             
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
-              <a href="#" className="inline-flex items-center justify-center whitespace-nowrap font-medium rounded-md px-6 h-10 w-full gap-2 bg-white text-lg text-primary shadow-lg transition-all hover:bg-white/90 hover:shadow-xl hover:scale-105 sm:w-auto">
+              <a href="https://play.google.com/store/apps/details?id=com.rupeewalk.app" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center whitespace-nowrap font-medium rounded-md px-6 h-10 w-full gap-2 bg-white text-lg text-primary shadow-lg transition-all hover:bg-white/90 hover:shadow-xl hover:scale-105 sm:w-auto">
                 <Smartphone className="h-5 w-5" />
                 Google Play
               </a>
-              <a href="#" className="inline-flex items-center justify-center whitespace-nowrap font-medium rounded-md px-6 h-10 w-full gap-2 bg-foreground text-lg text-background shadow-lg transition-all hover:bg-foreground/90 hover:shadow-xl hover:scale-105 sm:w-auto">
+              <a href="https://apps.apple.com/us/app/luckymeter/id6746455228" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center whitespace-nowrap font-medium rounded-md px-6 h-10 w-full gap-2 bg-foreground text-lg text-background shadow-lg transition-all hover:bg-foreground/90 hover:shadow-xl hover:scale-105 sm:w-auto">
                 <Apple className="h-5 w-5" />
                 App Store
               </a>
