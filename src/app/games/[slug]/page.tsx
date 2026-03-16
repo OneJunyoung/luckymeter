@@ -12,6 +12,7 @@ const DiceRoll = dynamic(() => import('@/components/games/DiceRoll'), { loading:
 const GhostLeg = dynamic(() => import('@/components/games/GhostLeg'), { loading: () => <LoadingSpinner /> });
 const DrawingLots = dynamic(() => import('@/components/games/DrawingLots'), { loading: () => <LoadingSpinner /> });
 const Gomoku = dynamic(() => import('@/components/games/Gomoku'), { loading: () => <LoadingSpinner /> });
+const Carrom = dynamic(() => import('@/components/games/Carrom'), { loading: () => <LoadingSpinner /> });
 
 const GAME_COMPONENTS: Record<string, React.ComponentType> = {
   'candy-match': CandyMatch,
@@ -21,6 +22,7 @@ const GAME_COMPONENTS: Record<string, React.ComponentType> = {
   'ghost-leg': GhostLeg,
   'drawing-lots': DrawingLots,
   'gomoku': Gomoku,
+  'carrom': Carrom,
 };
 
 function LoadingSpinner() {

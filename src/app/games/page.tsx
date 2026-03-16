@@ -13,6 +13,7 @@ const GAMES = [
   { slug: 'ghost-leg', title: 'Ghost Leg', icon: Route, color: 'from-violet-400 to-purple-500', shadow: 'shadow-violet-500/20' },
   { slug: 'drawing-lots', title: 'Drawing Lots', icon: Shuffle, color: 'from-red-400 to-rose-600', shadow: 'shadow-red-500/20' },
   { slug: 'gomoku', title: 'Gomoku', icon: Grid3X3, color: 'from-indigo-400 to-blue-600', shadow: 'shadow-indigo-500/20' },
+  { slug: 'carrom', title: 'Carrom', icon: Grid3X3, color: 'from-amber-500 to-yellow-600', shadow: 'shadow-amber-500/20' },
 ];
 
 const container: Variants = {
