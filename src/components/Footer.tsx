@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MapPin, Instagram, Facebook, MessageCircle, CircleHelp, Users, Mail, Phone, Linkedin } from "lucide-react";
 
 export default function Footer() {
@@ -49,10 +50,10 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-white">Company</h3>
             <ul className="mt-4 space-y-3">
-              <li><a href="#" className="text-muted-foreground transition-colors hover:text-primary">About Us</a></li>
-              <li><a href="#" className="text-muted-foreground transition-colors hover:text-primary">Careers</a></li>
-              <li><a href="#" className="text-muted-foreground transition-colors hover:text-primary">Press</a></li>
-              <li><a href="#" className="text-muted-foreground transition-colors hover:text-primary">Blog</a></li>
+              <li><Link href="/about" className="text-muted-foreground transition-colors hover:text-primary">About Us</Link></li>
+              <li><Link href="/contact" className="text-muted-foreground transition-colors hover:text-primary">Contact Us</Link></li>
+              <li><Link href="/privacy" className="text-muted-foreground transition-colors hover:text-primary">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-muted-foreground transition-colors hover:text-primary">Terms of Service</Link></li>
             </ul>
           </div>
           

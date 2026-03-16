@@ -54,6 +54,9 @@ export default function Navbar() {
             <a href="#entertainment" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
               Entertainment
             </a>
+            <Link href="/blog" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+              Blog
+            </Link>
             <Link href="/games" className="text-sm font-medium text-primary transition-colors hover:text-primary/80">
               Go to Play Games
             </Link>
@@ -92,6 +95,9 @@ export default function Navbar() {
             <a href="#entertainment" className="text-base font-medium text-foreground py-2" onClick={() => setMobileMenuOpen(false)}>
               Entertainment
             </a>
+            <Link href="/blog" className="text-base font-medium text-foreground py-2" onClick={() => setMobileMenuOpen(false)}>
+              Blog
+            </Link>
             <Link href="/games" className="text-base font-medium text-primary py-2" onClick={() => setMobileMenuOpen(false)}>
               Go to Play Games
             </Link>

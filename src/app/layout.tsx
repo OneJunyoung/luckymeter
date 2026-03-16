@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import CookieBanner from "@/components/CookieBanner";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -27,6 +29,13 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <CookieBanner />
+        <Script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4003263516632195" 
+          crossOrigin="anonymous" 
+          strategy="afterInteractive" 
+        />
       </body>
     </html>
   );
