@@ -63,7 +63,7 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex">
-            <a href="#cta" className="inline-flex flex-shrink-0 items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
+            <a href="https://lucky-meter.com/#cta" className="inline-flex flex-shrink-0 items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
               <Download className="h-4 w-4" />
               Download App
             </a>
@@ -101,7 +101,7 @@ export default function Navbar() {
             <Link href="/games" className="text-base font-medium text-primary py-2" onClick={() => setMobileMenuOpen(false)}>
               Go to Play Games
             </Link>
-            <a href="#cta" onClick={() => setMobileMenuOpen(false)} className="mt-4 flex flex-shrink-0 items-center justify-center rounded-md font-medium h-10 w-full gap-2 bg-primary text-primary-foreground">
+            <a href="https://lucky-meter.com/#cta" onClick={() => setMobileMenuOpen(false)} className="mt-4 flex flex-shrink-0 items-center justify-center rounded-md font-medium h-10 w-full gap-2 bg-primary text-primary-foreground">
               <Download className="h-4 w-4" />
               Download App
             </a>
