@@ -60,7 +60,7 @@ export default function HeroSection() {
             <div className="relative">
               <div className="relative z-10 overflow-hidden rounded-[3rem] border-8 border-foreground/90 bg-foreground/90 shadow-2xl">
                 <Image
-                  src="/images/image-2025-12-18-17-48-12.png"
+                  src="/images/updated-mobile-app.jpg"
                   alt="LuckyMeter App Interface"
                   width={280}
                   height={560}
