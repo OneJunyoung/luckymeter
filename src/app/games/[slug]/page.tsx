@@ -1,6 +1,8 @@
 import GameWrapper from '@/components/GameWrapper';
 import { notFound } from 'next/navigation';
 import dynamic from 'next/dynamic';
+import { Metadata } from 'next';
+import Script from 'next/script';
 
 
 
@@ -33,6 +35,39 @@ function LoadingSpinner() {
   );
 }
 
+// Generate dynamic metadata for each game
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  
+  if (!GAME_COMPONENTS[slug]) {
+    return { title: 'Game Not Found | LuckyMeter' };
+  }
+
+  const gameName = slug
+    .split('-')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+
+  return {
+    title: `Play ${gameName} Online Free | LuckyMeter Arcade`,
+    description: `Play the classic ${gameName} game instantly online. Compete for high scores and earn LuckyMeter points while you play.`,
+    keywords: `${gameName}, play ${gameName}, ${gameName} online, free web games`,
+    openGraph: {
+      title: `Play ${gameName} Online Free | LuckyMeter`,
+      description: `Play the classic ${gameName} game instantly online on LuckyMeter.`,
+      url: `https://lucky-meter.com/games/${slug}`,
+      images: [
+        {
+          url: `/images/updated-mobile-app.jpg`,
+          width: 1200,
+          height: 630,
+          alt: `${gameName} on LuckyMeter`,
+        },
+      ],
+    },
+  };
+}
+
 export default async function GamePage(props: { params: Promise<{ slug: string }> }) {
   const { slug } = await props.params;
 
@@ -49,8 +84,32 @@ export default async function GamePage(props: { params: Promise<{ slug: string }
     .join(' ');
 
   return (
-    <GameWrapper title={title}>
-       <GameComponent />
-    </GameWrapper>
+    <>
+      <Script
+        id="game-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoGame",
+            name: title,
+            url: `https://lucky-meter.com/games/${slug}`,
+            description: `Play the classic ${title} game instantly online. Compete for high scores and earn LuckyMeter points while you play.`,
+            playMode: "SinglePlayer",
+            applicationCategory: "GameApplication",
+            operatingSystem: "Web Browser",
+            genre: "Arcade Game",
+            provider: {
+              "@type": "Organization",
+              name: "LuckyMeter",
+              url: "https://lucky-meter.com"
+            }
+          })
+        }}
+      />
+      <GameWrapper title={title}>
+         <GameComponent />
+      </GameWrapper>
+    </>
   );
 }

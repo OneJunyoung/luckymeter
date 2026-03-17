@@ -64,6 +64,9 @@ export default function GameWrapper({ title, children }: GameWrapperProps) {
         <div className="w-full h-full relative bg-black/5 rounded-2xl border border-border flex items-center justify-center overflow-hidden">
           {children}
         </div>
+        <p className="mt-6 text-sm text-muted-foreground text-center max-w-2xl">
+          Play {title} online for free on LuckyMeter Arcade. Follow the game rules, compete for high scores, and earn reward points while you play!
+        </p>
       </motion.main>
     </div>
   );

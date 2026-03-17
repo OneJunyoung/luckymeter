@@ -13,9 +13,30 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://lucky-meter.com"),
   title: "Lucky Meter India's #1 Rewards App for Auto/Cab Drivers",
   description: "Turn your daily kilometers into instant rewards with Lucky Meter! The ultimate app for auto and cab drivers in India. Download now and start earning on every ride!",
   keywords: "driver rewards, auto drivers, cab drivers, lucky meter app, earn money driving, best app for drivers india, mileage tracker app, rewards for driving",
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://lucky-meter.com",
+    siteName: "LuckyMeter",
+    images: [
+      {
+        url: "/images/updated-mobile-app.jpg", // Using the hero image as default OG
+        width: 1200,
+        height: 630,
+        alt: "LuckyMeter App",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lucky Meter - India's #1 Rewards App for Drivers",
+    description: "Turn your daily kilometers into instant rewards with Lucky Meter!",
+    images: ["/images/updated-mobile-app.jpg"],
+  },
 };
 
 export default function RootLayout({
