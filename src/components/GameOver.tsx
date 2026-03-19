@@ -40,9 +40,6 @@ export default function GameOver({
   useEffect(() => {
     if (isOpen) {
         soundManager.playSynth(isNewHighScore ? 'success' : 'gameover');
-        setPhase('score');
-        setPlayerName('');
-        setRankAcquired(null);
 
         // Load leaderboard specifically for this game
         if (gameId) {

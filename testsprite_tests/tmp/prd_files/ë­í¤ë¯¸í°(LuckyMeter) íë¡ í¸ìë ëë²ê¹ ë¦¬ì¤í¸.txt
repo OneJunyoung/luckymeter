@@ -1,0 +1,43 @@
+럭키미터(LuckyMeter) 프론트엔드 디버깅 리스트
+현재 프로젝트의 프론트엔드 코드(주로 src/ 디렉터리 내의 React/Next.js 코드)를 분석한 결과, 아래와 같은 부분들에 대한 디버깅 빛 수정이 필요합니다. 크게 React 훅스(Hooks) 관련 로직 버그, 렌더링 성능 이슈, 그리고 문법/경고성 이슈로 나눌 수 있습니다.
+
+1. React Refs 렌더링 중 접근 오류 (가장 시급한 디버깅 대상)
+React에서 useRef로 선언한 값(ref.current)은 이벤트 핸들러나 useEffect 내에서만 접근해야 합니다. 렌더링 도중에 접근하면 UI가 예상대로 업데이트되지 않는 버그가 발생할 수 있습니다.
+
+src/components/games/Carrom.tsx
+580번 줄: stateRef.current.gameState 및 stateRef.current.gameMode를 렌더링(JSX 내부) 중에 읽고 있습니다. 이를 일반 useState 상태로 관리하거나 렌더링과 독립적으로 처리해야 합니다.
+651, 653번 줄: stateRef.current.turn, stateRef.current.gameMode 등을 렌더링 중에 잘못 접근하고 있습니다. 이로 인해 게임 UI가 제때 갱신되지 않는 버그가 발생할 확률이 높습니다.
+2. useEffect 내부에서의 불필요한 동기적 상태 업데이트 (Cascading Renders)
+useEffect 안에서 습관적으로 빈 화면을 그리자마자 setState를 호출하면 불필요한 연쇄 렌더링이 발생하여 웹사이트의 성능을 떨어뜨립니다.
+
+src/components/games/CandyMatch.tsx
+42번 줄: 마운트 직후 createBoard()를 호출하며 동기적으로 상태를 업데이트합니다.
+193번 줄: 타이머나 점수 상태 변경 후 setGameOver(true)를 동기적으로 호출하고 있습니다. 게임 오버 로직이 루프에 빠지거나 렌더링 성능을 저하시킬 수 있습니다.
+src/components/GameOver.tsx
+43번 줄: setPhase('score')를 Effect 내부에서 호출 중입니다.
+src/components/GameWrapper.tsx
+18번 줄: 마운트 시 soundManager.getMuted() 값을 가져와 setIsMuted()로 상태를 강제 동기화하고 있습니다. 초기 렌더링 값으로 설정하는 것이 좋습니다.
+src/components/CookieBanner.tsx
+14번 줄: localStorage에서 값을 읽어온 후 setShowBanner(true)를 호출하여 불필요한 리렌더링을 유발하고 있습니다.
+3. 의존성 배열(Dependency Array) 누락
+React 상태나 함수가 업데이트될 때 최신 값을 참조하지 못하게 하는(Stale Closure) 버그의 원인이 됩니다.
+
+src/components/games/BubblePop.tsx
+339번 줄: useCallback 로직에서 findMatchCluster 함수가 의존성 배열에서 누락되었습니다.
+src/components/games/Gomoku.tsx
+269번 줄: useEffect 내부에서 사용하는 evaluateCell이 의존성 배열에 빠져 있습니다.
+4. 타입스크립트 및 자바스크립트 논리적 오류
+상수(const)로 선언해야 할 변수를 let으로 선언했는지, 권장되지 않는 any 타입을 쓰고 있는지 확인해야 합니다. 나중에 리팩토링할 때 버그를 유발합니다.
+
+src/components/games/BubblePop.tsx
+65, 219, 265번 줄 등에서 여러 변수(cols, b, targetY, startR, endR 등)가 변경되지 않음에도 let으로 선언되어 변수 스코프 혼동을 줄 수 있습니다.
+src/utils/soundManager.ts
+61번 줄: TypeScript의 any 타입이 무분별하게 사용되어 사운드 매니저 관련 타입 안정성을 해치고 있습니다.
+5. UI/UX 및 HTML 이스케이프 경고 (마이너 이슈)
+기능적 치명타는 아니지만 SEO나 페이지 렌더링 최적화, 혹은 문자열 깨짐을 방지하기 위해 수정이 필요한 부분입니다.
+
+<img> 태그 남용 최적화 필요: <Image /> (next/image) 모듈 대신 일반 <img> 태그를 사용하여 대역폭이나 LCP(Largest Contentful Paint) 속도가 느려질 수 있는 부분들입니다.
+EntertainmentSection.tsx, HeroSection.tsx, Navbar.tsx, RewardsSection.tsx, TestimonialsSection.tsx, DiceRoll.tsx 등.
+특수문자 이스케이프: 블로그 포스트나 정적 페이지(about, privacy, terms, FeaturesSection, HowItWorksSection 등)에서 ' 또는 " 문자를 &apos;, &quot; 등으로 이스케이프 처리하지 않은 에러가 다수 존재합니다.
+🚀 요약 및 다음 단계 추천
+가장 먼저 디버깅해야 할 우선순위는 Carrom 게임 컴포넌트(Carrom.tsx)의 React Refs 렌더링 접근 버그와 다양한 게임들 내의 useEffect 연쇄 렌더링 최적화입니다. 이 부분들이 실제 사용자가 게임을 플레이할 때 화면이 멈추거나 버벅이는 등 직접적인 문제를 유발할 수 있습니다.

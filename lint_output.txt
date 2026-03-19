@@ -1,0 +1,301 @@
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\app\about\page.tsx
+   1:23  warning  'MapPin' is defined but never used                               @typescript-eslint/no-unused-vars
+   1:31  warning  'ExternalLink' is defined but never used                         @typescript-eslint/no-unused-vars
+  25:34  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  35:26  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\app\blog\page.tsx
+   2:27  warning  'ChevronRight' is defined but never used                         @typescript-eslint/no-unused-vars
+  45:73  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\app\blog\strategies-for-gomoku\page.tsx
+  30:36   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  30:51   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  41:177  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  46:99   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  49:75   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  49:86   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  51:241  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  51:251  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  57:75   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  57:87   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  67:15   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  67:26   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  78:71   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  78:94   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  78:296  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  78:302  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  86:238  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\app\blog\the-history-of-carrom\page.tsx
+  24:53   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  30:152  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  30:158  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  35:220  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  43:63   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  43:81   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  46:79   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  46:87   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  46:130  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  46:141  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  46:146  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  46:152  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  46:258  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  46:264  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  70:160  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  76:164  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\app\blog\why-we-built-luckymeter\page.tsx
+  30:211  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  35:29   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  38:173  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  38:240  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  38:298  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  46:280  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\app\privacy\page.tsx
+   21:60   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   21:71   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   21:74   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   21:77   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   21:80   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   21:83   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   21:229  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   21:233  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   32:84   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   32:93   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   50:27   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   50:41   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   51:27   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   51:38   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   52:27   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   52:42   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  122:88   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  171:75   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  287:75   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  302:182  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  302:195  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\app\terms\page.tsx
+  29:112  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  35:96   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  37:63   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  37:70   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  58:52   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  58:82   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  58:88   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\CookieBanner.tsx
+  14:7    error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\CookieBanner.tsx:14:7
+  12 |     const consent = localStorage.getItem("cookieConsent");
+  13 |     if (!consent) {
+> 14 |       setShowBanner(true);
+     |       ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  15 |     }
+  16 |   }, []);
+  17 |  react-hooks/set-state-in-effect
+  50:174  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react/no-unescaped-entities
+  50:185  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react/no-unescaped-entities
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\EntertainmentSection.tsx
+    1:8   warning  'Image' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  157:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  171:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  185:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\FeaturesSection.tsx
+  55:137  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\Footer.tsx
+   3:66  warning  'Users' is defined but never used                                @typescript-eslint/no-unused-vars
+  17:20  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\GameOver.tsx
+  43:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\GameOver.tsx:43:9
+  41 |     if (isOpen) {
+  42 |         soundManager.playSynth(isNewHighScore ? 'success' : 'gameover');
+> 43 |         setPhase('score');
+     |         ^^^^^^^^ Avoid calling setState() directly within an effect
+  44 |         setPlayerName('');
+  45 |         setRankAcquired(null);
+  46 |  react-hooks/set-state-in-effect
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\GameWrapper.tsx
+  18:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\GameWrapper.tsx:18:5
+  16 |
+  17 |   useEffect(() => {
+> 18 |     setIsMuted(soundManager.getMuted());
+     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  19 |   }, []);
+  20 |
+  21 |   const toggleMute = () => {  react-hooks/set-state-in-effect
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\HeroSection.tsx
+  44:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\HowItWorksSection.tsx
+  54:115  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\Navbar.tsx
+   4:8   warning  'Image' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  34:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\RewardsSection.tsx
+   1:8   warning  'Image' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  23:30  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  43:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\TestimonialsSection.tsx
+   1:8   warning  'Image' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  54:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  93:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\games\BubblePop.tsx
+   65:11  error    'cols' is never reassigned. Use 'const' instead                                                                        prefer-const
+   93:30  warning  'e' is defined but never used                                                                                          @typescript-eslint/no-unused-vars
+  219:13  error    'b' is never reassigned. Use 'const' instead                                                                           prefer-const
+  265:13  error    'targetY' is never reassigned. Use 'const' instead                                                                     prefer-const
+  267:13  error    'startR' is never reassigned. Use 'const' instead                                                                      prefer-const
+  268:13  error    'endR' is never reassigned. Use 'const' instead                                                                        prefer-const
+  272:17  error    'cols' is never reassigned. Use 'const' instead                                                                        prefer-const
+  275:25  error    'cx' is never reassigned. Use 'const' instead                                                                          prefer-const
+  276:25  error    'cy' is never reassigned. Use 'const' instead                                                                          prefer-const
+  277:25  error    'dist' is never reassigned. Use 'const' instead                                                                        prefer-const
+  339:6   warning  React Hook useCallback has a missing dependency: 'findMatchCluster'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\games\CandyMatch.tsx
+   42:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\games\CandyMatch.tsx:42:5
+  40 |
+  41 |   useEffect(() => {
+> 42 |     createBoard();
+     |     ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  43 |   }, [createBoard]);
+  44 |   
+  45 |   // Logic to process matches (simplified for tokens, checks horizontal & vertical >= 3)                                                            react-hooks/set-state-in-effect
+  193:11  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\games\CandyMatch.tsx:193:11
+  191 |   useEffect(() => {
+  192 |       if(timeLeft <= 0 && !gameOver) {
+> 193 |           setGameOver(true);
+      |           ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  194 |           if(score > highScore) setHighScore(score);
+  195 |       }
+  196 |   }, [timeLeft, score, highScore, gameOver]);  react-hooks/set-state-in-effect
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\games\Carrom.tsx
+    8:8   warning  'ScoreBoard' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+  535:73  warning  'err' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+  580:14  error    Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\games\Carrom.tsx:580:14
+  578 |            <h1 className="text-3xl font-black italic tracking-wider text-slate-800 opacity-90">CARROM</h1>
+  579 |            
+> 580 |            {(stateRef.current.gameState === 'aiming' || stateRef.current.gameState === 'moving') && (
+      |              ^^^^^^^^^^^^^^^^^^^^^^^^^^ Cannot access ref value during render
+  581 |                 <div className="flex gap-4 items-center">
+  582 |                     <div className="flex flex-col items-end">
+  583 |                        <span className={`text-[10px] font-bold uppercase ${turn === 'bottom' ? 'text-blue-600' : 'text-slate-500'}`}>You {gameMode === 'pvp' ? '(P1)' : ''}</span>                                             react-hooks/refs
+  580:57  error    Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\games\Carrom.tsx:580:57
+  578 |            <h1 className="text-3xl font-black italic tracking-wider text-slate-800 opacity-90">CARROM</h1>
+  579 |            
+> 580 |            {(stateRef.current.gameState === 'aiming' || stateRef.current.gameState === 'moving') && (
+      |                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^ Cannot access ref value during render
+  581 |                 <div className="flex gap-4 items-center">
+  582 |                     <div className="flex flex-col items-end">
+  583 |                        <span className={`text-[10px] font-bold uppercase ${turn === 'bottom' ? 'text-blue-600' : 'text-slate-500'}`}>You {gameMode === 'pvp' ? '(P1)' : ''}</span>  react-hooks/refs
+  651:22  error    Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\games\Carrom.tsx:651:22
+  649 |            {gameState === 'aiming' && (
+  650 |                <span className="text-sm font-bold bg-slate-800 px-4 py-2 rounded-full border border-white/10 uppercase tracking-wider">
+> 651 |                    {(stateRef.current.gameMode === 'vs-ai' && stateRef.current.turn === 'top') 
+      |                      ^^^^^^^^^^^^^^^^^^^^^^^^^ Cannot access ref value during render
+  652 |                       ? 'AI is thinking...' 
+  653 |                       : (stateRef.current.turn === 'top' ? 'P2 Drag to Aim & Shoot' : 'P1 Drag to Aim & Shoot')}
+  654 |                </span>                                                                                                         react-hooks/refs
+  651:63  error    Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\games\Carrom.tsx:651:63
+  649 |            {gameState === 'aiming' && (
+  650 |                <span className="text-sm font-bold bg-slate-800 px-4 py-2 rounded-full border border-white/10 uppercase tracking-wider">
+> 651 |                    {(stateRef.current.gameMode === 'vs-ai' && stateRef.current.turn === 'top') 
+      |                                                               ^^^^^^^^^^^^^^^^^^^^^ Cannot access ref value during render
+  652 |                       ? 'AI is thinking...' 
+  653 |                       : (stateRef.current.turn === 'top' ? 'P2 Drag to Aim & Shoot' : 'P1 Drag to Aim & Shoot')}
+  654 |                </span>                                                                    react-hooks/refs
+  653:26  error    Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\games\Carrom.tsx:653:26
+  651 |                    {(stateRef.current.gameMode === 'vs-ai' && stateRef.current.turn === 'top') 
+  652 |                       ? 'AI is thinking...' 
+> 653 |                       : (stateRef.current.turn === 'top' ? 'P2 Drag to Aim & Shoot' : 'P1 Drag to Aim & Shoot')}
+      |                          ^^^^^^^^^^^^^^^^^^^^^ Cannot access ref value during render
+  654 |                </span>
+  655 |            )}
+  656 |            <Link href="/games" className="ml-auto inline-flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 rounded-xl transition-colors text-sm font-bold">                                                                                                  react-hooks/refs
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\games\DiceRoll.tsx
+  138:32  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\components\games\Gomoku.tsx
+    4:18  warning  'AnimatePresence' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  269:6   warning  React Hook useEffect has a missing dependency: 'evaluateCell'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\wonhi\OneDrive\바탕 화면\luckymeter\src\utils\soundManager.ts
+  61:62  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 119 problems (96 errors, 23 warnings)
+  9 errors and 0 warnings potentially fixable with the `--fix` option.
+

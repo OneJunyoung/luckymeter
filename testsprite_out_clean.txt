@@ -1,0 +1,61 @@
+﻿
+手겸±手뜯＄戍??授授닳졑手뜯죧??手졻＄授ㅲ＄授ㅲ＄?꾟?????????授戍?手授졻＄授ㅲ즲???????????手졻＄?手戍??????
+手썩죨?手댿짏戍룐＞授쇺쟻?手쇄죴???댿젅手멤×?곣⇒授듈¤授ㅲ죩手戍닳졃授ㅲ죩授╈？授룐죩手얄즽授戍댿젢?ｂ＆授꾟４授닳＄戍授닳즲授ㅲ…授겸〉手겸＝授욋죩手授닳〈授ㅲ죩
+手밟즵授뜯젧?뗢쟻?댿젢?룐쥍授섃쟽????手썩죬手졻？手╈～?얄죿?밟♧授뜯，戍곣˘授욋??戍댿젟?쎻졎授욋죩授뷜죴??手썩죬手멤？??授삘죬?授욋쟿手졻？手㎮젲戍얄졒
+??됤졁手뜯＄授授꾟４?얄젢?곣?????졻♧?꺿젅?욋…戍╈졅?귘졆戍╈…?욋쟻?쇄◁手닳젞?욋《戍닳〈?잂?授얄×手╈졑?잂쟻手멤젧??戍욋쟽?먥×手듈젅?욋…戍╈졅???????댿젆?됤젅??????????????????????????????手먥？????????
+
+Starting test execution...
+node : [31mTest executi
+on failed:[0m Error: Te
+sts are running. Please 
+wait for it to complete 
+or remove the lock file:
+  c:\Users\wonhi\OneDriv
+e\諛뷀깢 ?붾㈃\luckymeter\tes
+tsprite_tests\tmp\execut
+ion.lock
+위치 줄:1 문자:1
++ node C:\Users\wonhi\Ap
+pData\Local\npm-cache\_n
+px\8ddf6bea01b2519d\nod 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo      
+        : NotSpecified  
+  : ([31mTest execu.   
+ ..\execution.lock:S    
+tring) [], RemoteEx    c
+eption
+    + FullyQualifiedErr 
+   orId : NativeComman  
+  dError
+ 
+    at file:///C:/Users/
+wonhi/AppData/Local/npm-
+cache/_npx/8ddf6bea01b25
+19d/node_modules/@testsp
+rite/testsprite-mcp/dist
+/index.js:138028:23
+    at Command.<anonymou
+s> (file:///C:/Users/won
+hi/AppData/Local/npm-cac
+he/_npx/8ddf6bea01b2519d
+/node_modules/@testsprit
+e/testsprite-mcp/dist/in
+dex.js:143338:15)
+    at async Command.par
+seAsync (file:///C:/User
+s/wonhi/AppData/Local/np
+m-cache/_npx/8ddf6bea01b
+2519d/node_modules/@test
+sprite/testsprite-mcp/di
+st/index.js:141598:6)
+    at async main (file:
+///C:/Users/wonhi/AppDat
+a/Local/npm-cache/_npx/8
+ddf6bea01b2519d/node_mod
+ules/@testsprite/testspr
+ite-mcp/dist/index.js:14
+3558:9)

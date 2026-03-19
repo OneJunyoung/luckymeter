@@ -58,7 +58,7 @@ class SoundManager {
   playSynth(type: SoundType) {
       if (this.isMuted || typeof window === 'undefined') return;
 
-      const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
+      const AudioContext = window.AudioContext || (window as typeof window & { webkitAudioContext: typeof window.AudioContext }).webkitAudioContext;
       if (!AudioContext) return; // Fallback if not supported
 
       const ctx = new AudioContext();

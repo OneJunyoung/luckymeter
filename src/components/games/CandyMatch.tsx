@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ScoreBoard from '../ScoreBoard';
 import GameOver from '../GameOver';
@@ -20,7 +20,9 @@ const width = 8;
 const boardSize = width * width;
 
 export default function CandyMatch() {
-  const [board, setBoard] = useState<string[]>([]);
+  const [board, setBoard] = useState<string[]>(() => 
+    Array.from({ length: boardSize }, () => CANDY_COLORS[Math.floor(Math.random() * CANDY_COLORS.length)])
+  );
   const [selectedCandyId, setSelectedCandyId] = useState<number | null>(null);
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
@@ -38,9 +40,6 @@ export default function CandyMatch() {
     setGameOver(false);
   }, []);
 
-  useEffect(() => {
-    createBoard();
-  }, [createBoard]);
   
   // Logic to process matches (simplified for tokens, checks horizontal & vertical >= 3)
   const checkMatches = useCallback(() => {
@@ -133,11 +132,23 @@ export default function CandyMatch() {
   }, [checkMatches, pullDownCandies]);
 
   // Tick the clock
+  const scoreRef = useRef(score);
+  useEffect(() => {
+      scoreRef.current = score;
+  }, [score]);
+
   useEffect(() => {
       if (gameOver || timeLeft <= 0) return;
 
       const countdown = setInterval(() => {
-          setTimeLeft(t => t - 1);
+          setTimeLeft(t => {
+              const newTime = t - 1;
+              if (newTime <= 0) {
+                  setGameOver(true);
+                  setHighScore(prev => Math.max(prev, scoreRef.current));
+              }
+              return newTime;
+          });
       }, 1000);
 
       return () => clearInterval(countdown);
@@ -187,13 +198,7 @@ export default function CandyMatch() {
     }
   };
 
-  // Game Over handling
-  useEffect(() => {
-      if(timeLeft <= 0 && !gameOver) {
-          setGameOver(true);
-          if(score > highScore) setHighScore(score);
-      }
-  }, [timeLeft, score, highScore, gameOver]);
+  
 
 
   return (

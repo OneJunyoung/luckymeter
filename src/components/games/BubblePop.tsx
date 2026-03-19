@@ -62,7 +62,7 @@ export default function BubblePop() {
   const initGame = useCallback(() => {
     const initialBubbles: Bubble[] = [];
     for (let r = 0; r < 5; r++) {
-      let cols = (r % 2 === 0) ? COLS : COLS - 1;
+      const cols = (r % 2 === 0) ? COLS : COLS - 1;
       for (let c = 0; c < cols; c++) {
         const xOffset = (r % 2 === 0) ? BUBBLE_RADIUS : BUBBLE_DIAMETER;
         initialBubbles.push({
@@ -125,16 +125,16 @@ export default function BubblePop() {
       }
   }, []);
 
-  const getNeighbors = (r: number, c: number) => {
+  const getNeighbors = useCallback((r: number, c: number) => {
     const dirsEven = [[-1,-1], [-1,0], [0,-1], [0,1], [1,-1], [1,0]];
     const dirsOdd = [[-1,0], [-1,1], [0,-1], [0,1], [1,0], [1,1]];
     const dirs = r % 2 === 0 ? dirsEven : dirsOdd;
     
     return dirs.map(d => ({r: r + d[0], c: c + d[1]}))
                .filter(pos => pos.r >= 0 && pos.c >= 0 && pos.c < ((pos.r % 2 === 0) ? COLS : COLS - 1));
-  };
+  }, []);
 
-  const findMatchCluster = (r: number, c: number, color: string) => {
+  const findMatchCluster = useCallback((r: number, c: number, color: string) => {
       const matchIds: string[] = [];
       const visited = new Set<string>();
       const queue = [{r, c}];
@@ -159,7 +159,7 @@ export default function BubblePop() {
           }
       }
       return matchIds;
-  };
+  }, [getNeighbors]);
 
   const dropOrphans = useCallback(() => {
       const connected = new Set<string>();
@@ -216,7 +216,7 @@ export default function BubblePop() {
 
     // Dropping bubbles
     for (let i = bubblesRef.current.length - 1; i >= 0; i--) {
-        let b = bubblesRef.current[i];
+        const b = bubblesRef.current[i];
         if (b.isDropping) {
             b.y += 10;
             if (b.y > CANVAS_HEIGHT + 20) {
@@ -262,19 +262,19 @@ export default function BubblePop() {
         let bestR = 0;
         let bestC = 0;
         
-        let targetY = Math.max(BUBBLE_RADIUS, shooter.y);
+        const targetY = Math.max(BUBBLE_RADIUS, shooter.y);
 
-        let startR = Math.max(0, Math.floor((targetY - BUBBLE_RADIUS) / ROW_HEIGHT) - 1);
-        let endR = Math.min(MAX_ROWS, startR + 3);
+        const startR = Math.max(0, Math.floor((targetY - BUBBLE_RADIUS) / ROW_HEIGHT) - 1);
+        const endR = Math.min(MAX_ROWS, startR + 3);
         
         // Find closest empty grid cell
         for (let r = startR; r <= endR; r++) {
-            let cols = (r % 2 === 0) ? COLS : COLS - 1;
+            const cols = (r % 2 === 0) ? COLS : COLS - 1;
             for (let c = 0; c < cols; c++) {
                 if (!bubblesRef.current.find(b => b.r === r && b.c === c && !b.isDropping)) {
-                    let cx = c * BUBBLE_DIAMETER + (r % 2 === 0 ? BUBBLE_RADIUS : BUBBLE_DIAMETER);
-                    let cy = r * ROW_HEIGHT + BUBBLE_RADIUS;
-                    let dist = Math.hypot(shooter.x - cx, shooter.y - cy);
+                    const cx = c * BUBBLE_DIAMETER + (r % 2 === 0 ? BUBBLE_RADIUS : BUBBLE_DIAMETER);
+                    const cy = r * ROW_HEIGHT + BUBBLE_RADIUS;
+                    const dist = Math.hypot(shooter.x - cx, shooter.y - cy);
                     if (dist < minDiff) {
                         minDiff = dist;
                         bestR = r;
@@ -336,7 +336,7 @@ export default function BubblePop() {
         }
       }
     }
-  }, [highScore, spawnShooter, dropOrphans, shiftGridDown]);
+  }, [highScore, spawnShooter, dropOrphans, shiftGridDown, findMatchCluster]);
 
   const draw = useCallback(() => {
     const canvas = canvasRef.current;

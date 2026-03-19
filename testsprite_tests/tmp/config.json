@@ -1,0 +1,18 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3000",
+  "executionArgs": {
+    "projectName": "luckymeter",
+    "projectPath": "c:\\Users\\wonhi\\OneDrive\\바탕 화면\\luckymeter",
+    "testIds": [],
+    "additionalInstruction": "",
+    "serverMode": "development",
+    "envs": {
+      "API_KEY": "sk-user-FZHCjjv0Su5Pcr-5JCJ-tPQtdNklZ8JyPj9m7JOClldHuWgntsPM6Ny5diV7VqkAxs-VHZPdONjXRVEdq7zfZMScItOru_dhz7aI0Ks_XOUD5LzJ_LP5jXUjqI0nZf0FWKk"
+    }
+  },
+  "serverPort": 63040,
+  "proxy": "http://89b32933-6d8e-4375-9e8f-0c2a3ea47166:zhMb2rmIhdLharwbdVzlWBZ6iQ7nvzBK@tun.testsprite.com:8080"
+}

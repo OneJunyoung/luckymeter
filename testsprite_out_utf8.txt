@@ -1,0 +1,61 @@
+node : [31mTest executi
+on failed:[0m Error: Te
+sts are running. Please 
+wait for it to complete 
+or remove the lock file:
+  c:\Users\wonhi\OneDriv
+e\Î∞îÌÉï ?îÎ©¥\luckymeter\tes
+tsprite_tests\tmp\execut
+ion.lock
+¿ßƒ° ¡Ÿ:1 πÆ¿⁄:1
++ node C:\Users\wonhi\Ap
+pData\Local\npm-cache\_n
+px\8ddf6bea01b2519d\nod 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo      
+        : NotSpecified  
+  : ([31mTest execu.   
+ ..\execution.lock:S    
+tring) [], RemoteEx    c
+eption
+    + FullyQualifiedErr 
+   orId : NativeComman  
+  dError
+ 
+    at file:///C:/Users/
+wonhi/AppData/Local/npm-
+cache/_npx/8ddf6bea01b25
+19d/node_modules/@testsp
+rite/testsprite-mcp/dist
+/index.js:138028:23
+    at Command.<anonymou
+s> (file:///C:/Users/won
+hi/AppData/Local/npm-cac
+he/_npx/8ddf6bea01b2519d
+/node_modules/@testsprit
+e/testsprite-mcp/dist/in
+dex.js:143338:15)
+    at async Command.par
+seAsync (file:///C:/User
+s/wonhi/AppData/Local/np
+m-cache/_npx/8ddf6bea01b
+2519d/node_modules/@test
+sprite/testsprite-mcp/di
+st/index.js:141598:6)
+    at async main (file:
+///C:/Users/wonhi/AppDat
+a/Local/npm-cache/_npx/8
+ddf6bea01b2519d/node_mod
+ules/@testsprite/testspr
+ite-mcp/dist/index.js:14
+3558:9)
+
+‚¢∞‚°æ‚¢∂‚£§‚°Ä?Ä?Ä‚£Ä‚£¥‚†æ‚¢∂‚°Ç?Ä?Ä‚¢†‚£§‚£§‚£§‚£§‚£§?Ñ‚??Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä‚£Ä‚°Ä?Ä‚¢Ä‚£†‚£§‚£§‚£Ñ?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä‚¢†‚£§?Ä‚¢Ä‚°Ä?Ä?Ä?Ä?Ä?Ä?Ä
+‚¢Ω‚°É?Ä‚¢à‚£õ‚°∑‚£æ‚£ô‚†Å?Ä‚¢º‚°è?Ä?Ä?à‚†à‚¢∏‚°ø?Å‚¢°‚£µ‚¢¥‚£§‚°Ñ‚¢Ä‚°¥‚†¥‚£§‚°Ñ‚£¶‚£ø‚£∑‚°Ñ‚¢æ‚£è‚£Ä‚°à‚†õ?£‚£¶‚£Ñ‚£¥‚£¥‚£§‚°Ä‚£¥‚£Ñ‚£§‚°¶‚£∞‚°µ‚¢∞‚£Ω‚£ø‚°Ñ‚¢Ä‚£¥‚°¥‚£§‚°Ñ
+‚¢π‚£á‚£∂‚†ü?ã‚†Å?à‚†õ?∑‚¢Ü‚£ò‚†É?Ä?Ä?Ä?Ä‚¢Ω‚°á‚¢†‚£ø‚¢¶‚¢¶?æ‚°ó?π‚¢ø‚£∂‚£¨‚°Å‚¢®‚£ø‚??Ä‚°à‚†ô?õ‚†ª‚£ø‚°Ñ‚£∫‚°è?Ä?Ä‚¢Ω‚°á‚¢∏‚£ø?Ä?Ä‚£ª‚°á?Ä‚£ø‚†Ö‚¢†‚£ø‚¢ß‚†¶‚°æ‚†ø
+?Ä?â‚†≤‚¢∂‚£§‚£Ä‚£Ñ‚£¥?æ‚†õ?Å‚??Ä?Ä?Ä?†‚¢ø?É‚†à?ø‚°¶‚°¶‚†∂?Ç‚†∑‚°¶‚°¶?ø‚†Å?º‚¢∑‚¢¥‚†ò?ø‚°∂‚°¥‚°¥?ü‚?‚£æ‚°ø‚¢¶‚†æ?ü‚†Å‚¢∏‚†ü?Ä?Ä‚°ø‚†É?ê‚°ø‚¢µ‚†à?ø‚°¶‚°¶‚†∂???Ä?Ä?Ä?Ä?à‚†â?â‚†à?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä‚¢ê‚£ø?Ä?Ä?Ä?Ä?Ä?Ä?Ä?Ä
+
+Starting test execution...

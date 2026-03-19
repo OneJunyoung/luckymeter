@@ -577,7 +577,7 @@ export default function Carrom() {
         <div className="w-full px-6 py-4 flex justify-between items-center text-slate-800 mb-2">
            <h1 className="text-3xl font-black italic tracking-wider text-slate-800 opacity-90">CARROM</h1>
            
-           {(stateRef.current.gameState === 'aiming' || stateRef.current.gameState === 'moving') && (
+           {(gameState === 'aiming' || gameState === 'moving') && (
                 <div className="flex gap-4 items-center">
                     <div className="flex flex-col items-end">
                        <span className={`text-[10px] font-bold uppercase ${turn === 'bottom' ? 'text-blue-600' : 'text-slate-500'}`}>You {gameMode === 'pvp' ? '(P1)' : ''}</span>
@@ -648,9 +648,9 @@ export default function Carrom() {
         <div className="mt-6 w-full px-6 flex justify-between items-center text-slate-400">
            {gameState === 'aiming' && (
                <span className="text-sm font-bold bg-slate-800 px-4 py-2 rounded-full border border-white/10 uppercase tracking-wider">
-                   {(stateRef.current.gameMode === 'vs-ai' && stateRef.current.turn === 'top') 
+                   {(gameMode === 'vs-ai' && turn === 'top') 
                       ? 'AI is thinking...' 
-                      : (stateRef.current.turn === 'top' ? 'P2 Drag to Aim & Shoot' : 'P1 Drag to Aim & Shoot')}
+                      : (turn === 'top' ? 'P2 Drag to Aim & Shoot' : 'P1 Drag to Aim & Shoot')}
                </span>
            )}
            <Link href="/games" className="ml-auto inline-flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 rounded-xl transition-colors text-sm font-bold">

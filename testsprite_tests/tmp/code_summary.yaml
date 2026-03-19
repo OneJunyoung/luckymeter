@@ -1,0 +1,57 @@
+version: "2"
+type: frontend
+tech_stack:
+  - next.js
+  - react
+  - tailwindcss
+  - shadcn
+routes:
+  - path: /
+    file: src/app/page.tsx
+    auth_required: false
+    description: Home page
+  - path: /games
+    file: src/app/games/page.tsx
+    auth_required: false
+    description: Game lobby
+  - path: /games/bubble-pop
+    file: src/app/games/bubble-pop/page.tsx
+    auth_required: false
+    description: Bubble Pop game
+  - path: /games/candy-match
+    file: src/app/games/candy-match/page.tsx
+    auth_required: false
+    description: Candy Match game
+  - path: /games/carrom
+    file: src/app/games/carrom/page.tsx
+    auth_required: false
+    description: Carrom game
+features:
+  - name: Play Bubble Pop
+    description: User plays Bubble Pop game
+    files:
+      - src/components/games/BubblePop.tsx
+    entry_route: /games/bubble-pop
+    user_interactions:
+      - Click on bubbles to pop them
+    api_calls: []
+    auth_required: false
+  - name: Play Candy Match
+    description: User plays Candy Match game
+    files:
+      - src/components/games/CandyMatch.tsx
+    entry_route: /games/candy-match
+    user_interactions:
+      - Swap candies
+    api_calls: []
+    auth_required: false
+  - name: Play Carrom
+    description: User plays Carrom game
+    files:
+      - src/components/games/Carrom.tsx
+    entry_route: /games/carrom
+    user_interactions:
+      - Aim and shoot striker
+    api_calls: []
+    auth_required: false
+known_limitations: []

@@ -41,7 +41,7 @@ export default function Gomoku() {
       initGame(newMode);
   };
 
-  const checkWin = (grid: Player[][], r: number, c: number, targetPlayer: Player): boolean => {
+  const checkWin = useCallback((grid: Player[][], r: number, c: number, targetPlayer: Player): boolean => {
     const directions = [
       [1, 0], [0, 1], [1, 1], [1, -1] 
     ];
@@ -63,7 +63,7 @@ export default function Gomoku() {
       if (count >= 5) return true;
     }
     return false;
-  };
+  }, []);
 
   const handleCellClick = (r: number, c: number) => {
     // If it's vs-ai and it's White's turn, ignore clicks
@@ -106,7 +106,7 @@ export default function Gomoku() {
   // --- HARD AI HEURISTIC LOGIC ---
   
   // Evaluates a single line of consecutive pieces in one direction
-  const evaluateDirection = (grid: Player[][], r: number, c: number, dr: number, dc: number, player: Player): number => {
+  const evaluateDirection = useCallback((grid: Player[][], r: number, c: number, dr: number, dc: number, player: Player): number => {
       let count = 1;
       let blockedEnds = 0;
 
@@ -173,16 +173,16 @@ export default function Gomoku() {
       }
 
       return 0;
-  };
+  }, []);
 
-  const evaluateCell = (grid: Player[][], r: number, c: number, player: Player): number => {
+  const evaluateCell = useCallback((grid: Player[][], r: number, c: number, player: Player): number => {
       let score = 0;
       const directions = [ [1, 0], [0, 1], [1, 1], [1, -1] ];
       for (const [dr, dc] of directions) {
           score += evaluateDirection(grid, r, c, dr, dc, player);
       }
       return score;
-  };
+  }, [evaluateDirection]);
 
   useEffect(() => {
     // Only AI plays when mode is vs-ai and it's white's turn
@@ -266,7 +266,7 @@ export default function Gomoku() {
     }, 400);
 
     return () => clearTimeout(timer);
-  }, [currentPlayer, board, winner, mode]);
+  }, [currentPlayer, board, winner, mode, checkWin, evaluateCell]);
 
 
   // Determine Titles

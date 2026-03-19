@@ -1,0 +1,438 @@
+[
+  {
+    "id": "TC001",
+    "title": "Bubble Pop page loads with game canvas and core UI visible",
+    "description": "Verifies the Bubble Pop route renders and the game canvas/UI appear ready for interaction.",
+    "category": "Play Bubble Pop",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /games/bubble-pop"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/games/bubble-pop\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Bubble Pop\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"game canvas\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"score\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Launch Candy Match from the game lobby",
+    "description": "Verifies the user can navigate from the lobby to Candy Match and the board/controls render.",
+    "category": "Play Candy Match",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /games"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Candy Match\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Candy Match\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/games/candy-match\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Candy Match\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"game board\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Direct load of Candy Match page renders board and controls",
+    "description": "Verifies the Candy Match page loads successfully when opened directly and shows the playable UI.",
+    "category": "Play Candy Match",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /games/candy-match"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/games/candy-match\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Candy Match\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"game board\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"score\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"controls\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Initialization failure shows an on-screen error message",
+    "description": "Verifies that if the board fails to initialize, the user sees a visible error message or reload prompt.",
+    "category": "Play Candy Match",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /games/candy-match"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/games/candy-match\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"game board\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Game failed to initialize\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"reload prompt\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Launch Carrom and verify board and controls load",
+    "description": "Verifies the Carrom game page renders the board and essential gameplay controls on initial load.",
+    "category": "Play Carrom",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /games/carrom"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify page title contains \"Carrom\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Carrom\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Carrom board\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Striker\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Score\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Current turn\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Aim and shoot the striker once and verify pieces move",
+    "description": "Verifies that after aiming and shooting, the striker and pieces visibly move, indicating physics is applied.",
+    "category": "Play Carrom",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /games/carrom"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Carrom board\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the striker"
+      },
+      {
+        "type": "action",
+        "description": "Click on the board to set an aim direction"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Shoot\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Striker in motion\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Pieces in motion\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Complete a shot and verify current turn updates",
+    "description": "Verifies that the current turn indicator changes after a valid shot resolves.",
+    "category": "Play Carrom",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /games/carrom"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Current turn\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the current turn indicator to note the displayed player name"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Active player label\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the striker"
+      },
+      {
+        "type": "action",
+        "description": "Click on the board to set an aim direction"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Shoot\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Current turn\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Active player label\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Complete a shot and verify score display updates or remains consistent with no score event",
+    "description": "Verifies the score area updates appropriately after a shot (either changes due to scoring or remains stable with clear display).",
+    "category": "Play Carrom",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /games/carrom"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Score\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Player 1 score\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Player 2 score\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the striker"
+      },
+      {
+        "type": "action",
+        "description": "Click on the board to set an aim direction"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Shoot\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Score\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Prevent shooting when no aim is set",
+    "description": "Verifies the UI prevents or blocks a shot if the user has not set an aim direction.",
+    "category": "Play Carrom",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /games/carrom"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Carrom board\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Shoot\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Set aim\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Striker\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Pieces\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Multiple consecutive shots do not break the game UI",
+    "description": "Verifies the game remains responsive and continues updating after several aim-and-shoot actions.",
+    "category": "Play Carrom",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /games/carrom"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Carrom board\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the striker"
+      },
+      {
+        "type": "action",
+        "description": "Click on the board to set an aim direction"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Shoot\" button"
+      },
+      {
+        "type": "action",
+        "description": "Wait for 2 seconds"
+      },
+      {
+        "type": "action",
+        "description": "Click on the striker"
+      },
+      {
+        "type": "action",
+        "description": "Click on the board to set an aim direction"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Shoot\" button"
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Stale turn/score handling: UI shows an error message with a recovery option",
+    "description": "Verifies that if the UI cannot update turn/score after movement, the page shows a visible recovery option such as reload/reset messaging.",
+    "category": "Play Carrom",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /games/carrom"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Carrom board\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the striker"
+      },
+      {
+        "type": "action",
+        "description": "Click on the board to set an aim direction"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Shoot\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Score\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Current turn\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Reload\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Game end state shows match progress and final score",
+    "description": "Verifies that when the match ends, a visible game-over state appears with final scoring information.",
+    "category": "Play Carrom",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /games/carrom"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Carrom board\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on the \"Fast finish\" or \"End game\" control if visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Game Over\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Final Score\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Play again\" is visible"
+      }
+    ]
+  }
+]
