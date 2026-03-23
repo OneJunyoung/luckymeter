@@ -60,6 +60,9 @@ export default function Navbar() {
             <Link href="/games" className="text-sm font-medium text-primary transition-colors hover:text-primary/80">
               Go to Play Games
             </Link>
+            <Link href="/fortune-teller" className="text-sm font-medium text-primary transition-colors hover:text-primary/80">
+              Fortune Teller
+            </Link>
           </div>
 
           <div className="hidden md:flex">
@@ -100,6 +103,9 @@ export default function Navbar() {
             </Link>
             <Link href="/games" className="text-base font-medium text-primary py-2" onClick={() => setMobileMenuOpen(false)}>
               Go to Play Games
+            </Link>
+            <Link href="/fortune-teller" className="text-base font-medium text-primary py-2" onClick={() => setMobileMenuOpen(false)}>
+              Fortune Teller
             </Link>
             <a href="https://lucky-meter.com/#cta" onClick={() => setMobileMenuOpen(false)} className="mt-4 flex flex-shrink-0 items-center justify-center rounded-md font-medium h-10 w-full gap-2 bg-primary text-primary-foreground">
               <Download className="h-4 w-4" />

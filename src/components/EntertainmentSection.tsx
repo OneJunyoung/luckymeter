@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Gamepad2, Dice5, Sparkles, Moon, Star, Trophy, CirclePlay } from "lucide-react";
+import { Gamepad2, Dice5, Sparkles, Moon, Star, Trophy, CirclePlay, ScrollText, Fingerprint, MoonStar } from "lucide-react";
 
 export default function EntertainmentSection() {
   return (
@@ -96,44 +96,44 @@ export default function EntertainmentSection() {
             
             <div className="relative p-6">
               <div className="space-y-4">
-                <Link href="/games/ghost-leg" className="flex w-full items-center gap-4 rounded-xl p-4 text-left transition-all duration-300 bg-white/10 hover:bg-white/15">
+                <Link href="/fortune-teller?method=prashnavali" className="flex w-full items-center gap-4 rounded-xl p-4 text-left transition-all duration-300 bg-white/10 hover:bg-white/15">
                   <div className="flex h-12 w-12 items-center justify-center rounded-lg transition-all duration-300 bg-white/10">
-                    <Star className="h-6 w-6 text-yellow-300" />
+                    <ScrollText className="h-6 w-6 text-yellow-300" />
                   </div>
                   <div className="flex-1">
-                    <p className="font-medium text-white">Ghost Leg (Amidakuji)</p>
-                    <p className="text-sm text-purple-200">Test your path of destiny</p>
+                    <p className="font-medium text-white">Ram Prashnavali</p>
+                    <p className="text-sm text-purple-200">Think of a question</p>
                   </div>
                   <Sparkles className="h-5 w-5 transition-all duration-300 text-purple-300" />
                 </Link>
                 
-                <Link href="/games/drawing-lots" className="flex w-full items-center gap-4 rounded-xl p-4 text-left transition-all duration-300 bg-white/10 hover:bg-white/15">
+                <Link href="/fortune-teller?method=nadi" className="flex w-full items-center gap-4 rounded-xl p-4 text-left transition-all duration-300 bg-white/10 hover:bg-white/15">
                   <div className="flex h-12 w-12 items-center justify-center rounded-lg transition-all duration-300 bg-white/10">
-                    <Moon className="h-6 w-6 text-yellow-300" />
+                    <Fingerprint className="h-6 w-6 text-yellow-300" />
                   </div>
                   <div className="flex-1">
-                    <p className="font-medium text-white">Drawing Lots</p>
-                    <p className="text-sm text-purple-200">Pick the winning stick</p>
+                    <p className="font-medium text-white">Nadi Astrology</p>
+                    <p className="text-sm text-purple-200">Simulated thumbprint reading</p>
                   </div>
                   <Sparkles className="h-5 w-5 transition-all duration-300 text-purple-300" />
                 </Link>
                 
-                <Link href="/games/bubble-pop" className="flex w-full items-center gap-4 rounded-xl p-4 text-left transition-all duration-300 bg-white/10 hover:bg-white/15">
+                <Link href="/fortune-teller?method=vedic" className="flex w-full items-center gap-4 rounded-xl p-4 text-left transition-all duration-300 bg-white/10 hover:bg-white/15">
                   <div className="flex h-12 w-12 items-center justify-center rounded-lg transition-all duration-300 bg-white/10">
-                    <Sparkles className="h-6 w-6 text-yellow-300" />
+                    <MoonStar className="h-6 w-6 text-yellow-300" />
                   </div>
                   <div className="flex-1">
-                    <p className="font-medium text-white">Bubble Pop</p>
-                    <p className="text-sm text-purple-200">Pop bubbles to win prizes</p>
+                    <p className="font-medium text-white">Vedic Insight</p>
+                    <p className="text-sm text-purple-200">Deep astrological daily insights</p>
                   </div>
                   <Sparkles className="h-5 w-5 transition-all duration-300 text-purple-300" />
                 </Link>
               </div>
               
-              <a href="#cta" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all hover:bg-primary/90 h-9 px-4 py-2 mt-6 w-full gap-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-white hover:from-yellow-500 hover:to-orange-600 border-0">
+              <Link href="/fortune-teller" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all hover:bg-primary/90 h-9 px-4 py-2 mt-6 w-full gap-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-white hover:from-yellow-500 hover:to-orange-600 border-0">
                 <Sparkles className="h-4 w-4" />
                 Read My Fortune
-              </a>
+              </Link>
             </div>
           </div>
           
